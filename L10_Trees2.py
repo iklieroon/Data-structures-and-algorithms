@@ -26,7 +26,7 @@ def search(root,key):
     elif root.data>key and root.leftnode is not None:
         return search(root.leftchild,key)
     elif root.data<key and root.rightnode is not None:
-        return search(root.rightchild,key)
+        return search(root.rightnode,key)
     else:
         return -1
 
@@ -44,3 +44,4 @@ if keynode==-1:
     print("key does not exist in the tree")
 else:
     print("key exist",keynode.data)
+
